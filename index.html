@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Undersccore Project</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.4/underscore-umd-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.4/underscore-esm-min.js"></script>
+<script>
+// 1 _.each(list, iteratee, [context])
+  //_.each([1, 2, 3], alert)
+  //_.each({one: 1, two: 2, three: 3}, alert)
+
+// 2 _.map(list, iteratee, [context])
+  //_.map([1, 2, 3], function (num) {return num * 3; })
+  //_.map({one: 1, two: 2, three: 3}, function (num, key){ return num * 3; })
+  //_.map([[1,2], [3,4]], _.first)
+
+// 3 _.reduce(list, iteratee, [memo], [context])
+  //var sum = _.reduce([1, 2, 3], function (memo, num){ return memo+num;}, 0)
+
+// 4 _.reduceRight(list, iteratee, [memo], [context])
+  //var list = [[0, 1], [2, 3], [4, 5]]
+  //var flat = _.reduceRight(list, function (a, b) {return a.concat(b)}, [])
+
+// 5 _.find(list, predicate, [context])
+  var even = _.find([1, 2, 3, 4, 5, 6], function (num) { return num % 2 ==0})
+console.log(even)
+</script>
+</body>
+</html>
